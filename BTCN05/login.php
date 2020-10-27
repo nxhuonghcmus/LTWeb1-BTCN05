@@ -58,6 +58,7 @@
         $user = findUserByUsername($username);
         if (!$user) {
             $error = "Không tìm thấy người dùng";
+            echo header("refresh: 0.5");
         } else {
             if ($password != $user['password']) {
                 $error = "Mật khẩu hông chính xác";
