@@ -122,7 +122,7 @@
                         <div class="form-group">
                             <div class="input-group">
                                 <button class="btn btn-primary btn-lg btn-block w3-round-large" type="submit" name="dki" value="dki">
-                                    Create Account</button>
+                                    Create Accounts</button>
                             </div>
                         </div>
                     </form>
