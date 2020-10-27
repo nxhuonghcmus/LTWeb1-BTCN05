@@ -34,7 +34,9 @@
         $confirmpassword = $_POST['confirmpassword'];
         $user = findUserByUsername($username);
         if ($username == "" || $password == "" || $email == "") {
-            echo "Vui lòng nhập đầy đủ thông tin";
+            $error= "Vui lòng nhập đầy đủ thông tin";
+            echo header("refresh: 0.5");
+           
         } else {
             if ($user) {
                 $error = "Tài khoản đã tồn tại";
